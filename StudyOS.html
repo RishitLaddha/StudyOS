@@ -52,27 +52,31 @@
   </div>
 
   <!-- Subject Filter Chips -->
-  <div style="padding:0 40px 12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+    <div style="padding:0 40px 12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
     <span style="font-size:11px;font-weight:900;color:var(--text-soft);text-transform:uppercase;letter-spacing:0.1em;margin-right:4px;">Filter:</span>
-    <button class="dash-filter-chip active" onclick="filterDashboard(this,'all')" style="background:var(--accent);color:white;border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">All</button>
-    <button class="dash-filter-chip" onclick="filterDashboard(this,'Chemistry')" style="background:var(--pink);color:var(--pink-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">🧪 Chemistry</button>
-    <button class="dash-filter-chip" onclick="filterDashboard(this,'Mathematics')" style="background:var(--lavender);color:var(--lav-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">📐 Maths</button>
-    <button class="dash-filter-chip" onclick="filterDashboard(this,'English Lit')" style="background:var(--mint);color:var(--mint-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">📖 English</button>
-    <button class="dash-filter-chip" onclick="filterDashboard(this,'History')" style="background:var(--sky);color:var(--sky-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">🌍 History</button>
-    <button class="dash-filter-chip" onclick="filterDashboard(this,'Biology')" style="background:var(--yellow);color:var(--yel-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">🔬 Biology</button>
-    <button class="dash-filter-chip" onclick="filterDashboard(this,'Physics')" style="background:var(--peach);color:var(--peach-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:'Inter','Poppins',sans-serif;transition:all 0.2s;">⚡ Physics</button>
+    <button class="dash-filter-chip active" onclick="filterDashboard(this,'all')" style="background:var(--accent);color:white;border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">All</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'Build Your Own Encryption Software')" style="background:var(--pink);color:var(--pink-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">🔐 Encryption</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'ATLAS Elective')" style="background:var(--lavender);color:var(--lav-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">🎯 Elective</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'Entrepreneurship Development')" style="background:var(--mint);color:var(--mint-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">🚀 Entrepreneurship</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'Recent Advances and Challenges in AI')" style="background:var(--sky);color:var(--sky-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">🤖 AI</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'Project Life Cycle Management')" style="background:var(--yellow);color:var(--yel-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">📈 PLCM</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'Secure Coding')" style="background:var(--peach);color:var(--peach-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">🛡️ Secure Coding</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'UI/UX Development')" style="background:var(--lavender);color:var(--lav-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">🎨 UI/UX</button>
+    <button class="dash-filter-chip" onclick="filterDashboard(this,'Cybersecurity and Blockchain')" style="background:var(--pink);color:var(--pink-text);border:none;border-radius:50px;padding:5px 14px;font-size:12px;font-weight:800;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;transition:all 0.2s;">⛓️ Cyber + Chain</button>
   </div>
 
   <div class="quick-add-bar">
     <span style="font-size:18px;">✏️</span>
-    <input type="text" placeholder="Add a quick task... (e.g. Read chapter 4 for Chemistry)" id="quick-input" />
+    <input type="text" placeholder="Add a quick task... (e.g. Read chapter 4 for Build Your Own Encryption Software)" id="quick-input" />
     <select id="quick-subject">
-      <option>Chemistry</option>
-      <option>Mathematics</option>
-      <option>English Lit</option>
-      <option>History</option>
-      <option>Biology</option>
-      <option>Physics</option>
+      <option>Build Your Own Encryption Software</option>
+      <option>ATLAS Elective</option>
+      <option>Entrepreneurship Development</option>
+      <option>Recent Advances and Challenges in AI</option>
+      <option>Project Life Cycle Management</option>
+      <option>Secure Coding</option>
+      <option>UI/UX Development</option>
+      <option>Cybersecurity and Blockchain</option>
     </select>
     <button class="btn-accent" onclick="addQuickTask()">+ Add</button>
   </div>
@@ -80,43 +84,43 @@
   <div class="dashboard-grid">
     <div class="dash-card">
       <div class="dash-card-title">📋 Upcoming Deadlines <span class="tag">5 tasks</span></div>
-      <div class="deadline-item" data-course="Chemistry">
+      <div class="deadline-item" data-course="Build Your Own Encryption Software">
         <div class="deadline-dot" style="background:#E24B4A;"></div>
         <div class="deadline-info">
-          <div class="deadline-name">Organic Chemistry Lab Report</div>
-          <div class="deadline-sub">Chemistry · Google Classroom</div>
+          <div class="deadline-name">AES Module Implementation</div>
+          <div class="deadline-sub">Build Your Own Encryption Software · LMS</div>
         </div>
         <div class="deadline-badge badge-urgent">Due Today</div>
       </div>
-      <div class="deadline-item" data-course="Mathematics">
+      <div class="deadline-item" data-course="ATLAS Elective">
         <div class="deadline-dot" style="background:#F09F27;"></div>
         <div class="deadline-info">
-          <div class="deadline-name">Trigonometry Problem Set</div>
-          <div class="deadline-sub">Mathematics · Canvas</div>
+          <div class="deadline-name">Design Sprint Reflection</div>
+          <div class="deadline-sub">UI/UX Development · LMS</div>
         </div>
         <div class="deadline-badge badge-soon">Tomorrow</div>
       </div>
-      <div class="deadline-item" data-course="English Lit">
+      <div class="deadline-item" data-course="Secure Coding Lit">
         <div class="deadline-dot" style="background:#F09F27;"></div>
         <div class="deadline-info">
-          <div class="deadline-name">Shakespeare Essay — 1000 words</div>
-          <div class="deadline-sub">English Literature · Canvas</div>
+          <div class="deadline-name">AI Ethics Comparative Note</div>
+          <div class="deadline-sub">Recent Advances and Challenges in AI · LMS</div>
         </div>
         <div class="deadline-badge badge-soon">Apr 10</div>
       </div>
-      <div class="deadline-item" data-course="History">
+      <div class="deadline-item" data-course="Cybersecurity and Blockchain">
         <div class="deadline-dot" style="background:#1D9E75;"></div>
         <div class="deadline-info">
-          <div class="deadline-name">World War II Timeline</div>
-          <div class="deadline-sub">History · Google Classroom</div>
+          <div class="deadline-name">Pitch Deck Draft</div>
+          <div class="deadline-sub">Entrepreneurship Development · LMS</div>
         </div>
         <div class="deadline-badge badge-ok">Apr 13</div>
       </div>
-      <div class="deadline-item" data-course="Biology">
+      <div class="deadline-item" data-course="Project Life Cycle Management">
         <div class="deadline-dot" style="background:#1D9E75;"></div>
         <div class="deadline-info">
-          <div class="deadline-name">Cell Division Diagram</div>
-          <div class="deadline-sub">Biology · Google Classroom</div>
+          <div class="deadline-name">Threat Modeling Worksheet</div>
+          <div class="deadline-sub">Secure Coding · LMS</div>
         </div>
         <div class="deadline-badge badge-ok">Apr 15</div>
       </div>
@@ -125,25 +129,25 @@
     <div style="display:flex;flex-direction:column;gap:18px;">
       <div class="dash-card">
         <div class="dash-card-title">☀️ Today's Tasks</div>
-        <div class="task-check" onclick="toggleTask(this)" data-course="History">
+        <div class="task-check" onclick="toggleTask(this)" data-course="Cybersecurity and Blockchain">
           <div class="check-box checked"></div>
-          <div class="task-text done">Read History Chapter 12</div>
-          <div class="task-course-tag" style="background:var(--sky);color:var(--sky-text);">History</div>
+          <div class="task-text done">Review blockchain-consensus notes</div>
+          <div class="task-course-tag" style="background:var(--sky);color:var(--sky-text);">Cybersecurity and Blockchain</div>
         </div>
-        <div class="task-check" onclick="toggleTask(this)" data-course="Chemistry">
+        <div class="task-check" onclick="toggleTask(this)" data-course="Build Your Own Encryption Software">
           <div class="check-box"></div>
-          <div class="task-text">Finish Lab Report draft</div>
-          <div class="task-course-tag" style="background:var(--mint);color:var(--mint-text);">Chemistry</div>
+          <div class="task-text">Complete encryption key schedule coding</div>
+          <div class="task-course-tag" style="background:var(--mint);color:var(--mint-text);">Build Your Own Encryption Software</div>
         </div>
-        <div class="task-check" onclick="toggleTask(this)" data-course="Biology">
+        <div class="task-check" onclick="toggleTask(this)" data-course="Project Life Cycle Management">
           <div class="check-box"></div>
-          <div class="task-text">Practice 20 flashcards</div>
-          <div class="task-course-tag" style="background:var(--lavender);color:var(--lav-text);">Biology</div>
+          <div class="task-text">Revise product lifecycle phases</div>
+          <div class="task-course-tag" style="background:var(--lavender);color:var(--lav-text);">Project Life Cycle Management</div>
         </div>
-        <div class="task-check" onclick="toggleTask(this)" data-course="Mathematics">
+        <div class="task-check" onclick="toggleTask(this)" data-course="ATLAS Elective">
           <div class="check-box"></div>
-          <div class="task-text">Solve Trigonometry Ex. 4.3</div>
-          <div class="task-course-tag" style="background:var(--yellow);color:var(--yel-text);">Maths</div>
+          <div class="task-text">Wireframe onboarding in Figma</div>
+          <div class="task-course-tag" style="background:var(--yellow);color:var(--yel-text);">UI/UX Development</div>
         </div>
         <div id="quick-tasks"></div>
       </div>
@@ -159,7 +163,7 @@
               </svg>
               <div class="progress-ring-center" style="color:var(--accent2);">70%</div>
             </div>
-            <div class="progress-label">Chemistry</div>
+            <div class="progress-label">Build Your Own Encryption Software</div>
           </div>
           <div class="progress-item" style="background:rgba(232,223,255,0.4);border-radius:14px;">
             <div class="progress-ring-wrap">
@@ -169,7 +173,7 @@
               </svg>
               <div class="progress-ring-center" style="color:var(--lav-text);">50%</div>
             </div>
-            <div class="progress-label">Maths</div>
+            <div class="progress-label">UI/UX Development</div>
           </div>
           <div class="progress-item" style="background:rgba(208,245,232,0.4);border-radius:14px;">
             <div class="progress-ring-wrap">
@@ -179,7 +183,7 @@
               </svg>
               <div class="progress-ring-center" style="color:var(--mint-text);">85%</div>
             </div>
-            <div class="progress-label">English</div>
+            <div class="progress-label">Secure Coding</div>
           </div>
         </div>
       </div>
@@ -194,17 +198,17 @@
   <div class="page-header">
     <div>
       <h2>Your Course Folders 📁</h2>
-      <p>6 courses · Semester 2, 2026</p>
+      <p>8 courses · Semester 2, 2026</p>
     </div>
     <button class="btn-dark" onclick="openAddCourseModal()">＋ Add Course</button>
   </div>
 
   <div class="courses-grid">
-    <div class="folder-card" onclick="openCourse('Chemistry')">
+    <div class="folder-card" onclick="openCourse('Build Your Own Encryption Software')">
       <div class="folder-tab" style="background:var(--c-chem);"></div>
       <div class="folder-body" style="background:var(--c-chem);">
         <span class="folder-emoji">🧪</span>
-        <div class="folder-name">Chemistry</div>
+        <div class="folder-name">Build Your Own Encryption Software</div>
         <div class="folder-sub">Mrs. Sharma · MON WED FRI</div>
         <div class="folder-stats">
           <span class="folder-stat">4 tasks</span>
@@ -214,11 +218,11 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openCourse('Mathematics')">
+    <div class="folder-card" onclick="openCourse('ATLAS Elective')">
       <div class="folder-tab" style="background:var(--c-math);"></div>
       <div class="folder-body" style="background:var(--c-math);">
         <span class="folder-emoji">📐</span>
-        <div class="folder-name">Mathematics</div>
+        <div class="folder-name">ATLAS Elective</div>
         <div class="folder-sub">Mr. Patel · TUE THU SAT</div>
         <div class="folder-stats">
           <span class="folder-stat">6 tasks</span>
@@ -228,11 +232,11 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openCourse('English Lit')">
+    <div class="folder-card" onclick="openCourse('Secure Coding Lit')">
       <div class="folder-tab" style="background:var(--c-eng);"></div>
       <div class="folder-body" style="background:var(--c-eng);">
         <span class="folder-emoji">📖</span>
-        <div class="folder-name">English Literature</div>
+        <div class="folder-name">Secure Coding Literature</div>
         <div class="folder-sub">Ms. D'Souza · MON TUE WED</div>
         <div class="folder-stats">
           <span class="folder-stat">2 tasks</span>
@@ -242,11 +246,11 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openCourse('History')">
+    <div class="folder-card" onclick="openCourse('Cybersecurity and Blockchain')">
       <div class="folder-tab" style="background:var(--c-hist);"></div>
       <div class="folder-body" style="background:var(--c-hist);">
         <span class="folder-emoji">🌍</span>
-        <div class="folder-name">History</div>
+        <div class="folder-name">Cybersecurity and Blockchain</div>
         <div class="folder-sub">Mr. Khan · WED FRI</div>
         <div class="folder-stats">
           <span class="folder-stat">3 tasks</span>
@@ -256,11 +260,11 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openCourse('Biology')">
+    <div class="folder-card" onclick="openCourse('Project Life Cycle Management')">
       <div class="folder-tab" style="background:var(--c-bio);"></div>
       <div class="folder-body" style="background:var(--c-bio);">
         <span class="folder-emoji">🔬</span>
-        <div class="folder-name">Biology</div>
+        <div class="folder-name">Project Life Cycle Management</div>
         <div class="folder-sub">Ms. Iyer · TUE THU</div>
         <div class="folder-stats">
           <span class="folder-stat">5 tasks</span>
@@ -270,11 +274,11 @@
       </div>
     </div>
 
-    <div class="folder-card" onclick="openCourse('Physics')">
+    <div class="folder-card" onclick="openCourse('Secure Coding')">
       <div class="folder-tab" style="background:var(--c-phys);"></div>
       <div class="folder-body" style="background:var(--c-phys);">
         <span class="folder-emoji">⚡</span>
-        <div class="folder-name">Physics</div>
+        <div class="folder-name">Secure Coding</div>
         <div class="folder-sub">Mr. Nair · MON WED SAT</div>
         <div class="folder-stats">
           <span class="folder-stat">3 tasks</span>
@@ -355,25 +359,25 @@
 
       <!-- 8 AM -->
       <div class="tt-time">8:00</div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,214,224,0.7);border-color:var(--accent);cursor:pointer;" onclick="openClassDetail('Chemistry','🧪','Mon 8:00–9:00 AM','Lab 2','Organic Chemistry unit — functional groups and reaction mechanisms. Mrs. Sharma will demonstrate oxidation reactions today.',['Lab report due TODAY — submit before 11pm','Bring safety goggles to the lab','Pre-read Chapter 8, pages 145–160'],'var(--pink)')"><div class="tt-class-name">Chemistry</div><div class="tt-class-room">Lab 2</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,214,224,0.7);border-color:var(--accent);cursor:pointer;" onclick="openClassDetail('Build Your Own Encryption Software','🧪','Mon 8:00–9:00 AM','Lab 2','Organic Build Your Own Encryption Software unit — functional groups and reaction mechanisms. Mrs. Sharma will demonstrate oxidation reactions today.',['Lab report due TODAY — submit before 11pm','Bring safety goggles to the lab','Pre-read Chapter 8, pages 145–160'],'var(--pink)')"><div class="tt-class-name">Build Your Own Encryption Software</div><div class="tt-class-room">Lab 2</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,214,224,0.7);border-color:var(--accent);cursor:pointer;" onclick="openClassDetail('Chemistry','🧪','Wed 8:00–9:00 AM','Lab 2','Continuing organic chemistry — alcohols, ketones and esters. Quiz on functional groups next Friday!',['Study functional group chart before class','Test next Friday — start revising now'],'var(--pink)')"><div class="tt-class-name">Chemistry</div><div class="tt-class-room">Lab 2</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,214,224,0.7);border-color:var(--accent);cursor:pointer;" onclick="openClassDetail('Build Your Own Encryption Software','🧪','Wed 8:00–9:00 AM','Lab 2','Continuing organic chemistry — alcohols, ketones and esters. Quiz on functional groups next Friday!',['Study functional group chart before class','Test next Friday — start revising now'],'var(--pink)')"><div class="tt-class-name">Build Your Own Encryption Software</div><div class="tt-class-room">Lab 2</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,214,224,0.7);border-color:var(--accent);cursor:pointer;" onclick="openClassDetail('Chemistry','🧪','Fri 8:00–9:00 AM','Lab 2','Lab practical session — you\'ll be titrating solutions. Results write-up due Monday.',['Complete pre-lab questions','Bring calculator for titration calculations'],'var(--pink)')"><div class="tt-class-name">Chemistry</div><div class="tt-class-room">Lab 2</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,214,224,0.7);border-color:var(--accent);cursor:pointer;" onclick="openClassDetail('Build Your Own Encryption Software','🧪','Fri 8:00–9:00 AM','Lab 2','Lab practical session — you\'ll be titrating solutions. Results write-up due Monday.',['Complete pre-lab questions','Bring calculator for titration calculations'],'var(--pink)')"><div class="tt-class-name">Build Your Own Encryption Software</div><div class="tt-class-room">Lab 2</div></div></div>
 
       <!-- 9 AM -->
       <div class="tt-time">9:00</div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(232,223,255,0.7);border-color:var(--lavender2);cursor:pointer;" onclick="openClassDetail('Mathematics','📐','Tue 9:00–10:00 AM','Room 301','Trigonometry deep dive — Ex 4.3 to 4.8. Mr. Patel will work through sine and cosine rules on the board.',['Problem set due Apr 9 — almost done?','Review double-angle formulas before class'],'var(--lavender)')"><div class="tt-class-name">Mathematics</div><div class="tt-class-room">Room 301</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(232,223,255,0.7);border-color:var(--lavender2);cursor:pointer;" onclick="openClassDetail('ATLAS Elective','📐','Tue 9:00–10:00 AM','Room 301','Trigonometry deep dive — Ex 4.3 to 4.8. Mr. Patel will work through sine and cosine rules on the board.',['Problem set due Apr 9 — almost done?','Review double-angle formulas before class'],'var(--lavender)')"><div class="tt-class-name">ATLAS Elective</div><div class="tt-class-room">Room 301</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(232,223,255,0.7);border-color:var(--lavender2);cursor:pointer;" onclick="openClassDetail('Mathematics','📐','Thu 9:00–10:00 AM','Room 301','Calculus introduction — limits and derivatives. Practice questions handed out in class.',['Bring your textbook and graph paper'],'var(--lavender)')"><div class="tt-class-name">Mathematics</div><div class="tt-class-room">Room 301</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(232,223,255,0.7);border-color:var(--lavender2);cursor:pointer;" onclick="openClassDetail('ATLAS Elective','📐','Thu 9:00–10:00 AM','Room 301','Calculus introduction — limits and derivatives. Practice questions handed out in class.',['Bring your textbook and graph paper'],'var(--lavender)')"><div class="tt-class-name">ATLAS Elective</div><div class="tt-class-room">Room 301</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
 
       <!-- 10 AM -->
       <div class="tt-time">10:00</div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,245,232,0.7);border-color:var(--mint2);cursor:pointer;" onclick="openClassDetail('English Lit','📖','Mon 10:00–11:00 AM','Room 204','Hamlet Act 4 analysis — themes of revenge and madness. Essay due Apr 10, 1000 words.',['Shakespeare essay due Apr 10!','Read Act 4 before class','Check SparkNotes for character analysis'],'var(--mint)')"><div class="tt-class-name">English Lit</div><div class="tt-class-room">Room 204</div></div></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,245,232,0.7);border-color:var(--mint2);cursor:pointer;" onclick="openClassDetail('English Lit','📖','Tue 10:00–11:00 AM','Room 204','Peer review session — swap drafts with a partner. Ms. D\'Souza will provide feedback sheets.',['Bring printed draft for peer review','Submit final essay on Canvas Apr 10'],'var(--mint)')"><div class="tt-class-name">English Lit</div><div class="tt-class-room">Room 204</div></div></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,245,232,0.7);border-color:var(--mint2);cursor:pointer;" onclick="openClassDetail('English Lit','📖','Wed 10:00–11:00 AM','Room 204','Final essay guidance — Ms. D\'Souza reviews common mistakes. Last class before submission.',['Final submission due Apr 10 on Canvas!','Check the essay rubric on Google Classroom'],'var(--mint)')"><div class="tt-class-name">English Lit</div><div class="tt-class-room">Room 204</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,245,232,0.7);border-color:var(--mint2);cursor:pointer;" onclick="openClassDetail('Secure Coding Lit','📖','Mon 10:00–11:00 AM','Room 204','Hamlet Act 4 analysis — themes of revenge and madness. Essay due Apr 10, 1000 words.',['Shakespeare essay due Apr 10!','Read Act 4 before class','Check SparkNotes for character analysis'],'var(--mint)')"><div class="tt-class-name">Secure Coding Lit</div><div class="tt-class-room">Room 204</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,245,232,0.7);border-color:var(--mint2);cursor:pointer;" onclick="openClassDetail('Secure Coding Lit','📖','Tue 10:00–11:00 AM','Room 204','Peer review session — swap drafts with a partner. Ms. D\'Souza will provide feedback sheets.',['Bring printed draft for peer review','Submit final essay on Canvas Apr 10'],'var(--mint)')"><div class="tt-class-name">Secure Coding Lit</div><div class="tt-class-room">Room 204</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,245,232,0.7);border-color:var(--mint2);cursor:pointer;" onclick="openClassDetail('Secure Coding Lit','📖','Wed 10:00–11:00 AM','Room 204','Final essay guidance — Ms. D\'Souza reviews common mistakes. Last class before submission.',['Final submission due Apr 10 on Canvas!','Check the essay rubric on Google Classroom'],'var(--mint)')"><div class="tt-class-name">Secure Coding Lit</div><div class="tt-class-room">Room 204</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
 
@@ -381,9 +385,9 @@
       <div class="tt-time">11:00</div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,238,255,0.7);border-color:var(--sky2);cursor:pointer;" onclick="openClassDetail('History','🌍','Wed 11:00 AM–12:00 PM','Room 110','World War II — Pacific Theatre and D-Day. Mr. Khan will show documentary clips.',['Timeline diagram due Apr 13','Download template from Google Classroom','Revise key dates: 1939, 1941, 1944, 1945'],'var(--sky)')"><div class="tt-class-name">History</div><div class="tt-class-room">Room 110</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,238,255,0.7);border-color:var(--sky2);cursor:pointer;" onclick="openClassDetail('Cybersecurity and Blockchain','🌍','Wed 11:00 AM–12:00 PM','Room 110','World War II — Pacific Theatre and D-Day. Mr. Khan will show documentary clips.',['Timeline diagram due Apr 13','Download template from Google Classroom','Revise key dates: 1939, 1941, 1944, 1945'],'var(--sky)')"><div class="tt-class-name">Cybersecurity and Blockchain</div><div class="tt-class-room">Room 110</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,238,255,0.7);border-color:var(--sky2);cursor:pointer;" onclick="openClassDetail('History','🌍','Fri 11:00 AM–12:00 PM','Room 110','Primary sources analysis — reading wartime letters and government documents.',['Chapter 12 reading — done ✓','Timeline diagram due Apr 13'],'var(--sky)')"><div class="tt-class-name">History</div><div class="tt-class-room">Room 110</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(208,238,255,0.7);border-color:var(--sky2);cursor:pointer;" onclick="openClassDetail('Cybersecurity and Blockchain','🌍','Fri 11:00 AM–12:00 PM','Room 110','Primary sources analysis — reading wartime letters and government documents.',['Chapter 12 reading — done ✓','Timeline diagram due Apr 13'],'var(--sky)')"><div class="tt-class-name">Cybersecurity and Blockchain</div><div class="tt-class-room">Room 110</div></div></div>
 
       <!-- Lunch -->
       <div class="tt-time" style="color:var(--text-xsoft);">12:00</div>
@@ -396,28 +400,28 @@
       <!-- 1 PM -->
       <div class="tt-time">1:00</div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,245,194,0.7);border-color:var(--yellow2);cursor:pointer;" onclick="openClassDetail('Biology','🔬','Tue 1:00–2:00 PM','Lab 3','Cell division — mitosis vs meiosis. Ms. Iyer will use slides of onion root tips.',['Cell division diagram due Apr 15','Memorise the 4 stages of mitosis','Bring coloured pencils for diagram work'],'var(--yellow)')"><div class="tt-class-name">Biology</div><div class="tt-class-room">Lab 3</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,245,194,0.7);border-color:var(--yellow2);cursor:pointer;" onclick="openClassDetail('Project Life Cycle Management','🔬','Tue 1:00–2:00 PM','Lab 3','Cell division — mitosis vs meiosis. Ms. Iyer will use slides of onion root tips.',['Cell division diagram due Apr 15','Memorise the 4 stages of mitosis','Bring coloured pencils for diagram work'],'var(--yellow)')"><div class="tt-class-name">Project Life Cycle Management</div><div class="tt-class-room">Lab 3</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,245,194,0.7);border-color:var(--yellow2);cursor:pointer;" onclick="openClassDetail('Biology','🔬','Thu 1:00–2:00 PM','Lab 3','Osmosis experiment — potato cylinders in salt solutions. Practical write-up in class.',['Diagram due Apr 15 — start early','Review osmosis definition'],'var(--yellow)')"><div class="tt-class-name">Biology</div><div class="tt-class-room">Lab 3</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,245,194,0.7);border-color:var(--yellow2);cursor:pointer;" onclick="openClassDetail('Project Life Cycle Management','🔬','Thu 1:00–2:00 PM','Lab 3','Osmosis experiment — potato cylinders in salt solutions. Practical write-up in class.',['Diagram due Apr 15 — start early','Review osmosis definition'],'var(--yellow)')"><div class="tt-class-name">Project Life Cycle Management</div><div class="tt-class-room">Lab 3</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
 
       <!-- 2 PM -->
       <div class="tt-time">2:00</div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,228,204,0.7);border-color:var(--peach2);cursor:pointer;" onclick="openClassDetail('Physics','⚡','Mon 2:00–3:00 PM','Room 105','Newton\'s Laws of Motion — forces, friction, and free body diagrams. Problem sheet handed out.',['Newton\'s Laws problem sheet due Apr 16','Read Chapter 6 summary','Practice drawing free body diagrams'],'var(--peach)')"><div class="tt-class-name">Physics</div><div class="tt-class-room">Room 105</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,228,204,0.7);border-color:var(--peach2);cursor:pointer;" onclick="openClassDetail('Secure Coding','⚡','Mon 2:00–3:00 PM','Room 105','Newton\'s Laws of Motion — forces, friction, and free body diagrams. Problem sheet handed out.',['Newton\'s Laws problem sheet due Apr 16','Read Chapter 6 summary','Practice drawing free body diagrams'],'var(--peach)')"><div class="tt-class-name">Secure Coding</div><div class="tt-class-room">Room 105</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
-      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,228,204,0.7);border-color:var(--peach2);cursor:pointer;" onclick="openClassDetail('Physics','⚡','Wed 2:00–3:00 PM','Room 105','Energy conservation — kinetic and potential energy problems. Past paper practice.',['Problem sheet due Apr 16','Chapter 6 summary — done ✓'],'var(--peach)')"><div class="tt-class-name">Physics</div><div class="tt-class-room">Room 105</div></div></div>
+      <div class="tt-cell"><div class="tt-class" style="background:rgba(255,228,204,0.7);border-color:var(--peach2);cursor:pointer;" onclick="openClassDetail('Secure Coding','⚡','Wed 2:00–3:00 PM','Room 105','Energy conservation — kinetic and potential energy problems. Past paper practice.',['Problem sheet due Apr 16','Chapter 6 summary — done ✓'],'var(--peach)')"><div class="tt-class-name">Secure Coding</div><div class="tt-class-room">Room 105</div></div></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
       <div class="tt-cell" style="background:rgba(250,250,250,0.5);"></div>
     </div>
   </div>
 
   <div class="tt-legend">
-    <span><span class="tt-legend-dot" style="background:rgba(255,214,224,0.8);border-color:var(--accent);"></span>Chemistry</span>
-    <span><span class="tt-legend-dot" style="background:rgba(232,223,255,0.8);border-color:var(--lavender2);"></span>Mathematics</span>
-    <span><span class="tt-legend-dot" style="background:rgba(208,245,232,0.8);border-color:var(--mint2);"></span>English Lit</span>
-    <span><span class="tt-legend-dot" style="background:rgba(208,238,255,0.8);border-color:var(--sky2);"></span>History</span>
-    <span><span class="tt-legend-dot" style="background:rgba(255,245,194,0.8);border-color:var(--yellow2);"></span>Biology</span>
-    <span><span class="tt-legend-dot" style="background:rgba(255,228,204,0.8);border-color:var(--peach2);"></span>Physics</span>
+    <span><span class="tt-legend-dot" style="background:rgba(255,214,224,0.8);border-color:var(--accent);"></span>Build Your Own Encryption Software</span>
+    <span><span class="tt-legend-dot" style="background:rgba(232,223,255,0.8);border-color:var(--lavender2);"></span>ATLAS Elective</span>
+    <span><span class="tt-legend-dot" style="background:rgba(208,245,232,0.8);border-color:var(--mint2);"></span>Secure Coding Lit</span>
+    <span><span class="tt-legend-dot" style="background:rgba(208,238,255,0.8);border-color:var(--sky2);"></span>Cybersecurity and Blockchain</span>
+    <span><span class="tt-legend-dot" style="background:rgba(255,245,194,0.8);border-color:var(--yellow2);"></span>Project Life Cycle Management</span>
+    <span><span class="tt-legend-dot" style="background:rgba(255,228,204,0.8);border-color:var(--peach2);"></span>Secure Coding</span>
   </div>
 </div>
 
@@ -450,7 +454,7 @@
     <div class="flashcard-panel" style="max-width:none;width:100%;margin:0;">
       <div class="fc-set-title">
         <span id="fc-emoji">🧪</span>
-        <span id="fc-title">Organic Chemistry</span>
+        <span id="fc-title">Organic Build Your Own Encryption Software</span>
       </div>
       <div class="fc-set-meta" id="fc-meta">24 cards · Last studied 2 days ago</div>
 
@@ -498,8 +502,8 @@
 
   <div class="bookmarks-grid">
     <div class="bookmarks-group">
-      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--accent);"></div>Chemistry</div>
-      <div class="bookmark-item" onclick="openBmModal('Khan Academy — Organic Chem','Chemistry','Video','khanacademy.org/science/organic-chem','Great intro series on functional groups and reactions. Perfect for lab prep! 🧪','var(--pink)','🧪')">
+      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--accent);"></div>Build Your Own Encryption Software</div>
+      <div class="bookmark-item" onclick="openBmModal('Khan Academy — Organic Chem','Build Your Own Encryption Software','Video','khanacademy.org/science/organic-chem','Great intro series on functional groups and reactions. Perfect for lab prep! 🧪','var(--pink)','🧪')">
         <div class="bm-favicon" style="background:var(--pink);">🧪</div>
         <div class="bm-info">
           <div class="bm-name">Khan Academy — Organic Chem</div>
@@ -508,7 +512,7 @@
         <span class="bm-tag" style="background:var(--pink);color:var(--pink-text);">Video</span>
         <button class="bm-open-btn">↗</button>
       </div>
-      <div class="bookmark-item" onclick="openBmModal('Lab Report Template — Mrs. Sharma','Chemistry','Classroom','classroom.google.com/c/chm2026','Official template from Mrs. Sharma. Required format for all chem submissions. 📋','var(--mint)','📄')">
+      <div class="bookmark-item" onclick="openBmModal('Lab Report Template — Mrs. Sharma','Build Your Own Encryption Software','Classroom','classroom.google.com/c/chm2026','Official template from Mrs. Sharma. Required format for all chem submissions. 📋','var(--mint)','📄')">
         <div class="bm-favicon" style="background:var(--pink);">📄</div>
         <div class="bm-info">
           <div class="bm-name">Lab Report Template — Mrs. Sharma</div>
@@ -517,10 +521,10 @@
         <span class="bm-tag" style="background:var(--mint);color:var(--mint-text);">Classroom</span>
         <button class="bm-open-btn">↗</button>
       </div>
-      <div class="bookmark-item" onclick="openBmModal('NCERT Chemistry Part 2 PDF','Chemistry','PDF','ncert.nic.in/textbook/pdf/lech202','Chapters 10–16. Bookmark pages 85 and 134 for exam! 📖','var(--sky)','📝')">
+      <div class="bookmark-item" onclick="openBmModal('NCERT Build Your Own Encryption Software Part 2 PDF','Build Your Own Encryption Software','PDF','ncert.nic.in/textbook/pdf/lech202','Chapters 10–16. Bookmark pages 85 and 134 for exam! 📖','var(--sky)','📝')">
         <div class="bm-favicon" style="background:var(--pink);">📝</div>
         <div class="bm-info">
-          <div class="bm-name">NCERT Chemistry Part 2 PDF</div>
+          <div class="bm-name">NCERT Build Your Own Encryption Software Part 2 PDF</div>
           <div class="bm-url">ncert.nic.in/textbook/pdf/lech202</div>
         </div>
         <span class="bm-tag" style="background:var(--sky);color:var(--sky-text);">PDF</span>
@@ -529,8 +533,8 @@
     </div>
 
     <div class="bookmarks-group">
-      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--lavender2);"></div>Mathematics</div>
-      <div class="bookmark-item" onclick="openBmModal('Desmos Graphing Calculator','Mathematics','Tool','desmos.com/calculator','Best free graphing tool. Use for all trig and calculus visualisations. 📐','var(--lavender)','📐')">
+      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--lavender2);"></div>ATLAS Elective</div>
+      <div class="bookmark-item" onclick="openBmModal('Desmos Graphing Calculator','ATLAS Elective','Tool','desmos.com/calculator','Best free graphing tool. Use for all trig and calculus visualisations. 📐','var(--lavender)','📐')">
         <div class="bm-favicon" style="background:var(--lavender);">📐</div>
         <div class="bm-info">
           <div class="bm-name">Desmos Graphing Calculator</div>
@@ -539,7 +543,7 @@
         <span class="bm-tag" style="background:var(--lavender);color:var(--lav-text);">Tool</span>
         <button class="bm-open-btn">↗</button>
       </div>
-      <div class="bookmark-item" onclick="openBmModal('3Blue1Brown — Trig Visualized','Mathematics','Video','youtube.com/watch?v=yBw0N3...','Stunning visual explanation of trig. Watch before Ex. 4.3 for sure! 🎥','var(--pink)','🎥')">
+      <div class="bookmark-item" onclick="openBmModal('3Blue1Brown — Trig Visualized','ATLAS Elective','Video','youtube.com/watch?v=yBw0N3...','Stunning visual explanation of trig. Watch before Ex. 4.3 for sure! 🎥','var(--pink)','🎥')">
         <div class="bm-favicon" style="background:var(--lavender);">🎥</div>
         <div class="bm-info">
           <div class="bm-name">3Blue1Brown — Trig Visualized</div>
@@ -548,10 +552,10 @@
         <span class="bm-tag" style="background:var(--pink);color:var(--pink-text);">Video</span>
         <button class="bm-open-btn">↗</button>
       </div>
-      <div class="bookmark-item" onclick="openBmModal('Canvas — Maths Assignment Portal','Mathematics','Canvas','canvas.instructure.com/courses/mth','Submit all maths assignments here. Check announcements every Monday. 📋','var(--mint)','📋')">
+      <div class="bookmark-item" onclick="openBmModal('Canvas — UI/UX Development Assignment Portal','ATLAS Elective','Canvas','canvas.instructure.com/courses/mth','Submit all maths assignments here. Check announcements every Monday. 📋','var(--mint)','📋')">
         <div class="bm-favicon" style="background:var(--lavender);">📋</div>
         <div class="bm-info">
-          <div class="bm-name">Canvas — Maths Assignment Portal</div>
+          <div class="bm-name">Canvas — UI/UX Development Assignment Portal</div>
           <div class="bm-url">canvas.instructure.com/courses/mth</div>
         </div>
         <span class="bm-tag" style="background:var(--mint);color:var(--mint-text);">Canvas</span>
@@ -560,8 +564,8 @@
     </div>
 
     <div class="bookmarks-group">
-      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--mint2);"></div>English Literature</div>
-      <div class="bookmark-item" onclick="openBmModal('SparkNotes — Hamlet Summary','English Lit','Notes','sparknotes.com/shakespeare/hamlet','Full character analysis + theme notes. Great for essay prep! 📖','var(--mint)','📖')">
+      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--mint2);"></div>Secure Coding Literature</div>
+      <div class="bookmark-item" onclick="openBmModal('SparkNotes — Hamlet Summary','Secure Coding Lit','Notes','sparknotes.com/shakespeare/hamlet','Full character analysis + theme notes. Great for essay prep! 📖','var(--mint)','📖')">
         <div class="bm-favicon" style="background:var(--mint);">📖</div>
         <div class="bm-info">
           <div class="bm-name">SparkNotes — Hamlet Summary</div>
@@ -570,7 +574,7 @@
         <span class="bm-tag" style="background:var(--mint);color:var(--mint-text);">Notes</span>
         <button class="bm-open-btn">↗</button>
       </div>
-      <div class="bookmark-item" onclick="openBmModal('Essay Rubric — Ms. D\'Souza','English Lit','Classroom','classroom.google.com/c/eng2026','The official rubric for the Hamlet essay. Must read before submitting! 📝','var(--mint)','📜')">
+      <div class="bookmark-item" onclick="openBmModal('Essay Rubric — Ms. D\'Souza','Secure Coding Lit','Classroom','classroom.google.com/c/eng2026','The official rubric for the Hamlet essay. Must read before submitting! 📝','var(--mint)','📜')">
         <div class="bm-favicon" style="background:var(--mint);">📜</div>
         <div class="bm-info">
           <div class="bm-name">Essay Rubric — Ms. D'Souza</div>
@@ -582,8 +586,8 @@
     </div>
 
     <div class="bookmarks-group">
-      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--sky2);"></div>History</div>
-      <div class="bookmark-item" onclick="openBmModal('Crash Course — World War II','History','Video','youtube.com/watch?v=Q78COTw...','Quick 12-min summary. Great visual timeline for the diagram assignment! 🌍','var(--sky)','🌍')">
+      <div class="bookmarks-group-title"><div class="bm-dot" style="background:var(--sky2);"></div>Cybersecurity and Blockchain</div>
+      <div class="bookmark-item" onclick="openBmModal('Crash Course — World War II','Cybersecurity and Blockchain','Video','youtube.com/watch?v=Q78COTw...','Quick 12-min summary. Great visual timeline for the diagram assignment! 🌍','var(--sky)','🌍')">
         <div class="bm-favicon" style="background:var(--sky);">🌍</div>
         <div class="bm-info">
           <div class="bm-name">Crash Course — World War II</div>
@@ -592,7 +596,7 @@
         <span class="bm-tag" style="background:var(--pink);color:var(--pink-text);">Video</span>
         <button class="bm-open-btn">↗</button>
       </div>
-      <div class="bookmark-item" onclick="openBmModal('Timeline Template — Mr. Khan','History','Classroom','classroom.google.com/c/hist2026','Download the blank timeline here. Due Apr 13! ⚠️','var(--sky)','📄')">
+      <div class="bookmark-item" onclick="openBmModal('Timeline Template — Mr. Khan','Cybersecurity and Blockchain','Classroom','classroom.google.com/c/hist2026','Download the blank timeline here. Due Apr 13! ⚠️','var(--sky)','📄')">
         <div class="bm-favicon" style="background:var(--sky);">📄</div>
         <div class="bm-info">
           <div class="bm-name">Timeline Template — Mr. Khan</div>
@@ -681,7 +685,7 @@
     <button class="bm-modal-close" onclick="closeBmModal(null,true)">✕</button>
     <div class="bm-modal-icon" id="bm-m-icon" style="background:var(--pink);">🧪</div>
     <div class="bm-modal-title" id="bm-m-title">Khan Academy</div>
-    <div class="bm-modal-course" id="bm-m-course" style="background:var(--pink);color:var(--pink-text);">Chemistry · Video</div>
+    <div class="bm-modal-course" id="bm-m-course" style="background:var(--pink);color:var(--pink-text);">Build Your Own Encryption Software · Video</div>
     <div class="bm-modal-note" id="bm-m-note">Great intro series on functional groups!</div>
     <div class="bm-modal-actions">
       <button class="bm-modal-btn primary">↗ Open Link</button>
