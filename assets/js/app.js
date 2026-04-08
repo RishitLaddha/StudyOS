@@ -303,31 +303,54 @@ function openNewSetModal() {
 
 /* ===== TASK 1: STUDY SETS — FULL JS DATA + INTERACTIVE ===== */
 const studySets = [
-  { id: 0, title: 'Encryption Fundamentals', emoji: '🔐', color: 'var(--pink)', barColor: 'var(--accent)', meta: '18 cards · Last studied today', progress: 68, cards: [
-      { q: 'What does AES stand for?', a: 'Advanced Encryption Standard' },
-      { q: 'What is the block size of AES?', a: '128 bits' },
-      { q: 'Why should IVs be random in CBC mode?', a: 'To prevent pattern leakage across identical plaintext blocks' }
-  ]},
-  { id: 1, title: 'AI Trends & Challenges', emoji: '🤖', color: 'var(--sky)', barColor: 'var(--sky2)', meta: '16 cards · Last studied 1 day ago', progress: 55, cards: [
-      { q: 'Name one major challenge in modern AI deployment.', a: 'Bias, hallucination, or lack of explainability' },
-      { q: 'What is model drift?', a: 'Performance degradation when real-world data changes over time' },
-      { q: 'Why is evaluation beyond accuracy important?', a: 'Safety, fairness, robustness and reliability matter in production' }
-  ]},
-  { id: 2, title: 'Secure Coding Essentials', emoji: '🛡️', color: 'var(--peach)', barColor: 'var(--peach2)', meta: '20 cards · Last studied 2 days ago', progress: 62, cards: [
-      { q: 'How do you prevent SQL injection?', a: 'Use parameterized queries and input validation' },
-      { q: 'What is XSS?', a: 'Cross-site scripting where attacker injects malicious scripts' },
-      { q: 'Why use least privilege?', a: 'To limit attack impact by reducing permissions' }
-  ]},
-  { id: 3, title: 'UI/UX Development', emoji: '🎨', color: 'var(--lavender)', barColor: 'var(--lavender2)', meta: '14 cards · Last studied today', progress: 73, cards: [
-      { q: 'What is visual hierarchy?', a: 'Ordering UI elements by importance using size, contrast and spacing' },
-      { q: 'Why design mobile-first?', a: 'It prioritizes core content and scales better to larger screens' },
-      { q: 'What does usability testing validate?', a: 'Whether users can complete tasks efficiently and confidently' }
-  ]},
-  { id: 4, title: 'Cybersecurity & Blockchain', emoji: '⛓️', color: 'var(--mint)', barColor: 'var(--mint2)', meta: '22 cards · Last studied 3 days ago', progress: 49, cards: [
-      { q: 'What is a blockchain?', a: 'A distributed append-only ledger maintained by network consensus' },
-      { q: 'What does hashing provide?', a: 'Integrity verification through fixed-length digests' },
-      { q: 'What is a smart contract?', a: 'Self-executing code deployed on a blockchain' }
-  ]},
+  {
+    id: 0, title: 'Organic Chemistry', emoji: '🧪', color: 'var(--pink)', barColor: 'var(--accent)',
+    meta: '24 cards · Last studied 2 days ago', progress: 72,
+    cards: [
+      { q: 'What is the functional group of an Alcohol?', a: '—OH (Hydroxyl group)' },
+      { q: 'What is the functional group of a Carboxylic Acid?', a: '—COOH (Carboxyl group)' },
+      { q: 'Name the product when an alcohol is oxidised.', a: 'Aldehyde or Ketone' },
+      { q: 'What is an isomer?', a: 'Compounds with same molecular formula but different structures' },
+      { q: 'Define a homologous series.', a: 'Series with same functional group, differing by CH₂' },
+    ]
+  },
+  {
+    id: 1, title: 'Trigonometry Formulas', emoji: '📐', color: 'var(--lavender)', barColor: 'var(--lavender2)',
+    meta: '18 cards · Last studied today', progress: 50,
+    cards: [
+      { q: 'What is sin²θ + cos²θ equal to?', a: '1 (Pythagorean identity)' },
+      { q: 'What is tan θ equal to?', a: 'sin θ / cos θ' },
+      { q: 'State the double angle formula for sin.', a: 'sin 2θ = 2 sin θ cos θ' },
+      { q: 'What is the cosine rule?', a: 'c² = a² + b² − 2ab cos C' },
+    ]
+  },
+  {
+    id: 2, title: 'Shakespeare Key Quotes', emoji: '📖', color: 'var(--mint)', barColor: 'var(--mint2)',
+    meta: '30 cards · Last studied 1 day ago', progress: 85,
+    cards: [
+      { q: 'Who says "To be or not to be, that is the question"?', a: 'Hamlet, Act 3 Scene 1' },
+      { q: 'What does "The lady doth protest too much" mean?', a: 'Insisting too strongly on something (said by Gertrude)' },
+      { q: 'Who says "Frailty, thy name is woman"?', a: 'Hamlet, Act 1 Scene 2' },
+    ]
+  },
+  {
+    id: 3, title: 'WW2 Key Dates & Events', emoji: '🌍', color: 'var(--sky)', barColor: 'var(--sky2)',
+    meta: '22 cards · Not started', progress: 10,
+    cards: [
+      { q: 'When did World War II begin?', a: '1 September 1939' },
+      { q: 'What was Operation Barbarossa?', a: "Germany's invasion of the Soviet Union, June 1941" },
+      { q: 'When did the US join WW2?', a: 'December 8, 1941 — after Pearl Harbor' },
+    ]
+  },
+  {
+    id: 4, title: 'Cell Biology Terms', emoji: '🔬', color: 'var(--yellow)', barColor: 'var(--yellow2)',
+    meta: '35 cards · Last studied 3 days ago', progress: 60,
+    cards: [
+      { q: 'What is the function of the mitochondria?', a: 'Produces ATP (energy) via cellular respiration' },
+      { q: 'What is osmosis?', a: 'Movement of water from high to low concentration across a semi-permeable membrane' },
+      { q: 'Define meiosis.', a: 'Cell division producing 4 haploid daughter cells for sexual reproduction' },
+    ]
+  },
 ];
 
 let activeSetId = 0;
@@ -447,10 +470,10 @@ const colorOptions = [
   { grad: 'linear-gradient(135deg,#1A1A2E,#2D1B4E)', name: 'Night' },
 ];
 const logoOptions = [
-  { text: 'StudyOS', badge: 'Your Learning OS', font: 'Trebuchet MS' },
-  { text: 'Academic Focus', badge: 'Top Student Energy', font: 'Trebuchet MS' },
-  { text: 'Bookworm Club', badge: 'Always Reading', font: 'Trebuchet MS' },
-  { text: 'Study Squad', badge: 'Struggling Together', font: 'Trebuchet MS' },
+  { text: '★ StudyOS ★', badge: 'Your Learning OS', font: 'Fredoka One' },
+  { text: '⚡ Academic Slayer', badge: 'Top Student Energy', font: 'Fredoka One' },
+  { text: '📚 Bookworm Club', badge: 'Always Reading', font: 'Fredoka One' },
+  { text: '✦ Study Squad', badge: 'Struggling Together', font: 'Fredoka One' },
 ];
 
 let selAvatar = 0, selColor = 7, selLogo = 0;
@@ -462,7 +485,6 @@ function buildProfileEditor() {
     <div class="av-option${i === selAvatar ? ' selected' : ''}" onclick="pickAvatar(${i})">${a}</div>
   `).join('');
 
-  // Colors
   // Logo/badge
   const lg = document.getElementById('logo-grid');
   lg.innerHTML = logoOptions.map((l, i) => `
@@ -478,6 +500,7 @@ function pickAvatar(i) {
   document.getElementById('id-portrait-el').textContent = avatarOptions[i];
   buildProfileEditor();
 }
+
 
 function pickLogo(i) {
   selLogo = i;
